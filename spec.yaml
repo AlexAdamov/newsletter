@@ -53,3 +53,4 @@ databases:
     # Postgres version - using the latest here
     version: "14"
     production: true
+    cluster_name: "test"
