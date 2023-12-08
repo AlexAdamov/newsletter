@@ -52,5 +52,4 @@ databases:
     size: db-s-dev-database
     # Postgres version - using the latest here
     version: "14"
-
-    production = true
+    production: true
