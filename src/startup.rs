@@ -72,4 +72,3 @@ fn run(
     .run();
     Ok(server)
 }
-
