@@ -4,7 +4,7 @@ name: newsletter
 # `fra` stands for Frankfurt (Germany - EU)
 region: fra
 services:
-  - name: zero2prod
+  - name: newsletterapp
     # Relative to the repository root
     dockerfile_path: Dockerfile
     source_dir: .
@@ -42,6 +42,9 @@ services:
       - key: APP_DATABASE__DATABASE_NAME
         scope: RUN_TIME
         value: ${newsletter.DATABASE}
+      - key: APP_APPLICATION__BASE_URL
+        scope: RUN_TIME
+        value: ${APP_URL}
 databases:
   # PG = Postgres
   - engine: PG
