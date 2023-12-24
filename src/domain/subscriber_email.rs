@@ -65,4 +65,3 @@ mod tests {
         SubscriberEmail::parse(valid_email.0).is_ok()
     }
 }
-
